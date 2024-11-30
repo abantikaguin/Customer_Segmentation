@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('E:\\Mall Customers\\Mall_Customers.csv')
+data = pd.read_csv('D:\\Mall Customers\\Mall_Customers.csv')
 label_encoder = LabelEncoder()
 data['Gender'] = label_encoder.fit_transform(data['Gender'])
 data.fillna(0, inplace=True)
